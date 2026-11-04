@@ -1,0 +1,34 @@
+{
+  "sources": [
+    {
+      "source_id": "hdfc-large-cap-direct",
+      "scheme_id": "hdfc_large_cap_direct_growth",
+      "organization": "hdfc_amc",
+      "url": "https://www.hdfcfund.com/explore/mutual-funds/hdfc-large-cap-fund/direct"
+    },
+    {
+      "source_id": "hdfc-large-cap-sid-2025-11-21",
+      "scheme_id": "hdfc_large_cap_direct_growth",
+      "organization": "hdfc_amc",
+      "url": "https://files.hdfcfund.com/s3fs-public/SID/2025-11/SID%20-%20HDFC%20Large%20Cap%20Fund%20dated%20November%2021%2C%202025_0.pdf?VersionId=EaBqM_CLfPzNZ0sa96.9__cmqJdRI6jq"
+    },
+    {
+      "source_id": "hdfc-flexi-cap-direct",
+      "scheme_id": "hdfc_flexi_cap_direct_growth",
+      "organization": "hdfc_amc",
+      "url": "https://www.hdfcfund.com/explore/mutual-funds/hdfc-flexi-cap-fund/direct"
+    },
+    {
+      "source_id": "hdfc-elss-tax-saver-direct",
+      "scheme_id": "hdfc_elss_tax_saver_direct_growth",
+      "organization": "hdfc_amc",
+      "url": "https://www.hdfcfund.com/explore/mutual-funds/hdfc-elss-tax-saver-fund/direct"
+    },
+    {
+      "source_id": "hdfc-mid-cap-direct",
+      "scheme_id": "hdfc_mid_cap_direct_growth",
+      "organization": "hdfc_amc",
+      "url": "https://www.hdfcfund.com/explore/mutual-funds/hdfc-mid-cap-fund/direct"
+    }
+  ]
+}

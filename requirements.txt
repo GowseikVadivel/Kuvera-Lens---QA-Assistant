@@ -1,0 +1,10 @@
+streamlit
+requests
+beautifulsoup4
+pymupdf
+numpy
+sentence-transformers
+qdrant-client
+python-dotenv
+groq
+playwright

@@ -1,0 +1,232 @@
+﻿KUVERA – LENS
+Product Problem Statement
+Version: 1.0
+Product Category: AI-powered Mutual Fund Information Assistant
+________________
+
+
+1. Product Overview
+Kuvera – Lens is a conversation-first, facts-only mutual fund information assistant designed to help users find specific scheme-related information through natural-language questions.
+Users can select a supported mutual fund scheme, ask questions about its features, charges, investment requirements and documentation, and receive concise answers backed by official sources.
+The application uses Retrieval-Augmented Generation (RAG) to retrieve relevant information from approved official sources before generating an answer.
+Product tagline: Your facts-only mutual fund companion.
+Core promise: One question. One clear answer. One trusted source.
+________________
+
+
+2. Problem Statement
+Mutual fund investors often need to search through lengthy scheme documents, factsheets and official webpages to find specific information such as minimum SIP amounts, expense ratios, exit loads, lock-in periods and riskometer details.
+Although this information is publicly available, locating the exact information can be time-consuming, particularly for users who are unfamiliar with financial terminology or lengthy documents.
+Users may also encounter inconsistent or outdated information from unofficial websites, making it difficult to identify which information is accurate and trustworthy.
+There is a need for a simple solution that allows users to ask questions in natural language and receive clear, concise answers supported by official mutual fund sources.
+How might we help mutual fund users find specific scheme-related facts quickly through natural-language questions, while making every answer easy to verify using official sources?
+________________
+
+
+3. Target Users
+Primary Users
+Retail mutual fund investors who want to understand the details of a particular mutual fund scheme.
+User Characteristics
+* First-time mutual fund investors.
+* Existing investors researching scheme-related information.
+* Users who prefer asking questions rather than reading lengthy documents.
+* Users who want to verify information using official sources.
+________________
+
+
+4. Proposed Solution
+Kuvera – Lens provides a conversational interface where users can:
+1. Select a supported HDFC mutual fund scheme.
+2. Ask questions in natural language.
+3. Receive concise answers generated from retrieved official information.
+4. Open the official source document or webpage to verify the answer.
+5. Continue asking related questions within the same conversation.
+The application uses a RAG pipeline to retrieve relevant information from its indexed knowledge base and provide evidence-backed responses.
+If the requested information cannot be verified from available official sources, the application clearly communicates that it cannot verify the answer instead of guessing.
+________________
+
+
+5. Initial Supported Mutual Fund Schemes
+The initial release will support four HDFC Mutual Fund schemes:
+1. HDFC Large Cap Fund – Direct Growth
+2. HDFC Flexi Cap Fund – Direct Plan Growth
+3. HDFC ELSS Tax Saver Fund – Direct Plan Growth
+4. HDFC Mid Cap Fund – Direct Growth
+The initial scope is intentionally limited to these four schemes.
+________________
+
+
+6. Supported Question Categories
+Users can ask factual questions related to:
+Scheme Information
+* Scheme objectives.
+* Fund category.
+* Benchmark.
+* Riskometer.
+Investment Details
+* Minimum investment amount.
+* Minimum SIP amount.
+* Additional purchase requirements.
+* Applicable investment conditions.
+Charges and Exit Conditions
+* Expense ratio.
+* Exit load.
+* Applicable charges.
+Tax and Lock-in Information
+* ELSS lock-in period.
+* Scheme-related tax information available in official documents.
+Documents and Statements
+* Factsheets.
+* Scheme Information Documents (SID).
+* Key Information Memorandums (KIM).
+* Official instructions for downloading statements and capital gains reports.
+________________
+
+
+7. Official Data Sources
+The application will use an approved whitelist of official sources.
+Primary Sources
+* HDFC Asset Management Company (HDFC AMC).
+* Securities and Exchange Board of India (SEBI).
+* Association of Mutual Funds in India (AMFI).
+Data Collection Approach
+The application will use URL-based ingestion instead of relying on manually downloaded documents.
+The ingestion system will:
+1. Maintain approved official source URLs.
+2. Scrape approved webpages.
+3. Discover relevant linked official PDFs, including SID, KIM and factsheets.
+4. Validate discovered URLs and restrict ingestion to approved official domains.
+5. Extract webpage and PDF content.
+6. Track source metadata and document versions.
+7. Refresh approved sources daily.
+Only verified official-source content will be used to generate factual answers.
+________________
+
+
+8. Core Product Requirements
+8.1 Scheme Selection
+Users must select one of the four supported schemes before starting a conversation.
+8.2 Natural-Language Questions
+Users must be able to ask questions using simple conversational language.
+8.3 Evidence-Based Answers
+Every factual answer must be grounded in retrieved official-source evidence.
+8.4 Source Citations
+Answers must provide relevant official source information, including a clickable source link.
+Where available, the citation should preserve the document title and page number.
+8.5 Concise Responses
+Answers should:
+* Be easy to understand.
+* Prefer one sentence.
+* Have a maximum of three sentences.
+* Avoid unnecessary financial terminology.
+8.6 Daily Source Refresh
+The system must check approved official sources every 24 hours and process only newly discovered or changed content.
+8.7 Conversation Continuity
+Users should be able to ask multiple related questions without restarting the conversation.
+________________
+
+
+9. Guardrails and Limitations
+Kuvera – Lens is strictly an information assistant, not an investment adviser.
+The application must:
+* Never fabricate financial information.
+* Never generate unsupported numerical values.
+* Never provide buy, sell or redeem recommendations.
+* Never predict mutual fund returns.
+* Never provide personalised investment or portfolio advice.
+* Never combine evidence from different schemes to answer a question.
+* Never use unapproved third-party sources as factual evidence.
+* Never expose API keys or internal system information.
+If sufficient evidence is unavailable, the application must respond:
+"I couldn't verify this information from the available official sources."
+The application must not guess or generate an answer simply to satisfy the user.
+________________
+
+
+10. Privacy Requirements
+The application must not collect or store:
+* PAN numbers.
+* Aadhaar numbers.
+* OTPs.
+* Bank account details.
+* Personal investment account credentials.
+* Unnecessary personal contact information.
+No integration with users' personal investment accounts is required.
+________________
+
+
+11. Out of Scope
+The following capabilities are not part of the initial release:
+* Mutual fund purchase or redemption.
+* Portfolio tracking.
+* Personalised investment recommendations.
+* Return predictions.
+* Investment performance comparisons.
+* Account login or brokerage integration.
+* General-purpose AI conversations.
+* Customer account management.
+________________
+
+
+12. Technical Approach
+The application will use the following technologies:
+Component
+	Technology
+	Programming Language
+	Python
+	User Interface
+	Streamlit
+	Web Scraping
+	Requests and BeautifulSoup
+	PDF Extraction
+	PyMuPDF
+	Text Processing
+	Python
+	Embedding Model
+	sentence-transformers/all-MiniLM-L6-v2
+	Vector Database
+	ChromaDB
+	LLM Provider
+	Groq
+	Source Refresh
+	GitHub Actions
+	Hosting
+	Streamlit Community Cloud
+	RAG Workflow
+1. Collect approved official website URLs.
+2. Scrape webpages and discover relevant PDFs.
+3. Load documents and extract text.
+4. Clean and split extracted content into chunks.
+5. Generate vector embeddings.
+6. Store chunks, embeddings and metadata in ChromaDB.
+7. Convert user questions into embeddings.
+8. Retrieve relevant evidence.
+9. Validate the evidence.
+10. Generate concise answers using Groq.
+11. Display answers with official source citations.
+________________
+
+
+13. Success Metrics
+The initial product will be evaluated using:
+* Answer accuracy.
+* Evidence retrieval accuracy.
+* Source citation correctness.
+* Unsupported-answer refusal accuracy.
+* Scheme separation accuracy.
+* Daily ingestion success rate.
+* Document update detection accuracy.
+* Response time.
+* Successful completion of supported user questions.
+________________
+
+
+14. Expected Outcome
+Kuvera – Lens aims to reduce the effort required to find mutual fund scheme information by providing a simple conversational experience backed by reliable official sources.
+Users should be able to find the information they need without manually searching through multiple lengthy documents.
+Every answer should be clear, relevant, traceable and supported by evidence.
+________________
+
+
+15. Product Vision
+Kuvera – Lens aims to make mutual fund information easier to discover, understand and verify through a simple, trustworthy conversational experience.
