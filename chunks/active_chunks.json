@@ -1,0 +1,92 @@
+{
+  "chunk_size": 1200,
+  "chunks": 1269,
+  "documents": 12,
+  "files": [
+    {
+      "chunk_count": 6,
+      "content_hash": "71964428611e6faf55266887a7c9a38ab6aab73910c3b7a6943e86bff6fd038e",
+      "path": "hdfc_elss_tax_saver_direct_growth/hdfc-elss-tax-saver-direct-71964428611e6faf55266887a7c9a38ab6aab73910c3b7a6943e86bff6fd038e-c5fcc72649c2e.jsonl",
+      "scheme_id": "hdfc_elss_tax_saver_direct_growth",
+      "source_id": "hdfc-elss-tax-saver-direct"
+    },
+    {
+      "chunk_count": 8,
+      "content_hash": "de0d69e8afb3b0b44248e1d86705f8fefcf75973ab20f138124cd9f3700de60b",
+      "path": "hdfc_flexi_cap_direct_growth/hdfc-flexi-cap-direct-de0d69e8afb3b0b44248e1d86705f8fefcf75973ab20f138124cd9f3700de60b-c5fcc72649c2e.jsonl",
+      "scheme_id": "hdfc_flexi_cap_direct_growth",
+      "source_id": "hdfc-flexi-cap-direct"
+    },
+    {
+      "chunk_count": 6,
+      "content_hash": "2daf4b53d1577889e7cb5b251c70e546042d3ebc12507942b2c8956308246459",
+      "path": "hdfc_large_cap_direct_growth/hdfc-large-cap-direct-2daf4b53d1577889e7cb5b251c70e546042d3ebc12507942b2c8956308246459-c5fcc72649c2e.jsonl",
+      "scheme_id": "hdfc_large_cap_direct_growth",
+      "source_id": "hdfc-large-cap-direct"
+    },
+    {
+      "chunk_count": 235,
+      "content_hash": "fcce1a1212fb8f66d44fa59078d5c683b00d315062ebe84ee35bf78daa43c4da",
+      "path": "hdfc_large_cap_direct_growth/hdfc-large-cap-sid-2025-11-21-fcce1a1212fb8f66d44fa59078d5c683b00d315062ebe84ee35bf78daa43c4da-c5fcc72649c2e.jsonl",
+      "scheme_id": "hdfc_large_cap_direct_growth",
+      "source_id": "hdfc-large-cap-sid-2025-11-21"
+    },
+    {
+      "chunk_count": 6,
+      "content_hash": "34b66625765b41838c76e2b473b66e5750d8606bd787894098fbc537c7b7d003",
+      "path": "hdfc_mid_cap_direct_growth/hdfc-mid-cap-direct-34b66625765b41838c76e2b473b66e5750d8606bd787894098fbc537c7b7d003-c5fcc72649c2e.jsonl",
+      "scheme_id": "hdfc_mid_cap_direct_growth",
+      "source_id": "hdfc-mid-cap-direct"
+    },
+    {
+      "chunk_count": 71,
+      "content_hash": "a8ce6f3b0cde4e6660da8e6601797cdcc4d71686d3f37342018c436acdb9c7fb",
+      "path": "hdfc_elss_tax_saver_direct_growth/hdfc_elss_tax_saver_direct_growth-sid-738a5088e9a9-a8ce6f3b0cde4e6660da8e6601797cdcc4d71686d3f37342018c436acdb9c7fb-c5fcc72649c2e.jsonl",
+      "scheme_id": "hdfc_elss_tax_saver_direct_growth",
+      "source_id": "hdfc_elss_tax_saver_direct_growth-sid-738a5088e9a9"
+    },
+    {
+      "chunk_count": 236,
+      "content_hash": "e5a269819fb69cbe2ec53f8efdc250f0b3125738a8a77c697e258e63a7c5a2bd",
+      "path": "hdfc_elss_tax_saver_direct_growth/hdfc_elss_tax_saver_direct_growth-sid-c234bc5eb35e-e5a269819fb69cbe2ec53f8efdc250f0b3125738a8a77c697e258e63a7c5a2bd-c5fcc72649c2e.jsonl",
+      "scheme_id": "hdfc_elss_tax_saver_direct_growth",
+      "source_id": "hdfc_elss_tax_saver_direct_growth-sid-c234bc5eb35e"
+    },
+    {
+      "chunk_count": 74,
+      "content_hash": "585be0db7e0d671646e50799d0894fa590c1ccd3a02c4dff96e81eb0b3735f35",
+      "path": "hdfc_flexi_cap_direct_growth/hdfc_flexi_cap_direct_growth-sid-63ab64841977-585be0db7e0d671646e50799d0894fa590c1ccd3a02c4dff96e81eb0b3735f35-c5fcc72649c2e.jsonl",
+      "scheme_id": "hdfc_flexi_cap_direct_growth",
+      "source_id": "hdfc_flexi_cap_direct_growth-sid-63ab64841977"
+    },
+    {
+      "chunk_count": 239,
+      "content_hash": "9adc9195aa435c67819d4fec0179031f12ca5c3c59ed14bf3701acd3df586eec",
+      "path": "hdfc_flexi_cap_direct_growth/hdfc_flexi_cap_direct_growth-sid-ac4408d00a70-9adc9195aa435c67819d4fec0179031f12ca5c3c59ed14bf3701acd3df586eec-c5fcc72649c2e.jsonl",
+      "scheme_id": "hdfc_flexi_cap_direct_growth",
+      "source_id": "hdfc_flexi_cap_direct_growth-sid-ac4408d00a70"
+    },
+    {
+      "chunk_count": 74,
+      "content_hash": "7a857e2f67f30a552e366ed5bdd6a23cb98f5ab51d90c4c565b21e872352a5eb",
+      "path": "hdfc_large_cap_direct_growth/hdfc_large_cap_direct_growth-sid-fc82790c1009-7a857e2f67f30a552e366ed5bdd6a23cb98f5ab51d90c4c565b21e872352a5eb-c5fcc72649c2e.jsonl",
+      "scheme_id": "hdfc_large_cap_direct_growth",
+      "source_id": "hdfc_large_cap_direct_growth-sid-fc82790c1009"
+    },
+    {
+      "chunk_count": 78,
+      "content_hash": "fd6d26e7e06ee11286952a169378d6f3608d440569a18dff3c69eeaaa04660ed",
+      "path": "hdfc_mid_cap_direct_growth/hdfc_mid_cap_direct_growth-sid-9e3f17d99b3b-fd6d26e7e06ee11286952a169378d6f3608d440569a18dff3c69eeaaa04660ed-c5fcc72649c2e.jsonl",
+      "scheme_id": "hdfc_mid_cap_direct_growth",
+      "source_id": "hdfc_mid_cap_direct_growth-sid-9e3f17d99b3b"
+    },
+    {
+      "chunk_count": 236,
+      "content_hash": "3858f78a7e08e70bdc178884a8bbb75bd3273e4dc6eec525b33c7d3fed392e84",
+      "path": "hdfc_mid_cap_direct_growth/hdfc_mid_cap_direct_growth-sid-afe7546febc3-3858f78a7e08e70bdc178884a8bbb75bd3273e4dc6eec525b33c7d3fed392e84-c5fcc72649c2e.jsonl",
+      "scheme_id": "hdfc_mid_cap_direct_growth",
+      "source_id": "hdfc_mid_cap_direct_growth-sid-afe7546febc3"
+    }
+  ],
+  "overlap_chars": 160
+}
